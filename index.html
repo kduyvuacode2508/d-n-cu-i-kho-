@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop giày </title>
+    <link rel="stylesheet" href="trang chủ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="trang chủ.js">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="trang chủ .mb.css">
+    <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+   />
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+   <a style="z-index: 1000;" href="https://www.facebook.com/profile.php?id=61570112627683"><i  class="LH fa-brands fa-facebook"></i></a>
+   <a style="z-index: 10000;" href="https://www.tiktok.com/@vuakhanhduy2508"><i class="tk fa-brands fa-tiktok"></i></a>
+  <div id="max" style="">
+      <img id="logon" src="istockphoto-1347979185-2048x2048.jpg" alt="logon">
+      <div class="max-menu">
+         <i id="gach" class="fa-solid fa-bars" onclick="duyy()"></i>
+      </div>
+      <div class="max-menu-desktop" style="display: none;">
+         <i id="chuong" class="fa-solid fa-bell"></i>
+      </div>
+  </div>
+   <header id="header">
+      <img id="logon"  src="istockphoto-1347979185-2048x2048.jpg" alt="logon">      
+      <div class="menu">
+         <div class="menu1">
+            <div id="trangchu">
+              <i class="fa-solid fa-house"></i>
+               <a href="trang chủ.html">TRANG CHỦ</a>
+            </div>
+            <div id="gioithieu">
+               <i class="fa-solid fa-user-tie"></i> 
+               <a href="../web/duy5.html">GIỚI THIỆU</a> 
+            </div>
+            
+            <div id="sanpham">
+               
+               <a href="thông báo .html"> SẢN PHẨM</a>
+             
+               <div id="spcon" >
+                  <a href="sk.html">GIÀY SNEAKER</a> 
+                  <a href="đá bóng.html">GIÀY ĐÁ BÓNG</a>
+                  <a href="áo.html">ÁO</a>
+                  <a href="quần.html">QUẦN</a>
+                  <a href="">VOUCHER</a>
+                  
+                  
+               </div>
+            </div>
+            <div class="him">
+               <a href="sk.html">GIÀY SNEAKER</a>
+            </div>
+            <div class="him">
+               <a href="đá bóng.html"> GIÀY ĐÁ BÓNG</a>
+            </div>
+            <div class="him">
+               <a href="áo.html">ÁO</a>
+            </div>
+            <div class="him">
+               <a href="quần.html">QUẦN</a>
+            </div>
+             <div class="him">
+               <a href="">VOUCHER</a>
+            </div>
+         </div>
+         <div class="menu2">
+            <div id="timkiem">
+              <a href="tim kiem.html"> <i style="font-size: 20px;margin: 0px 10px;"  class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div id="message" >
+            <i style="margin-right: 15px;font-size: 20px;" onclick=" message()" class="fa-solid fa-comments"></i>
+               <div id="messcon">
+                  <div id="mes">
+                     <img style="width: 50px;height:50px ;border-radius: 50%;padding: 5px 15px;" src="istockphoto-1347979185-2048x2048.jpg" alt="logon">
+                     <h3 style="color: #f4f4f4;"> VUA GIÀY KD</h3>
+                  </div>
+                  <div id="mess-tin">
+                     <i style="font-size: 25px; color:blue;padding: 5px 10px;" class="fa-solid fa-image"></i>
+                     <i style="font-size: 25px; color:blue;padding: 5px 10px;" class="fa-solid fa-file"></i>
+                     <input style="background-color: #333; border: 0px;height: 30px;border-radius: 15px;color: #f4f4f4;width: 210px;position: relative;" type="text" placeholder="Aa">
+                     <i style="position: absolute; color: blue; margin-left: 270px; margin-top: 5px; font-size: 20px;" class="fa-solid fa-face-smile"></i>
+                     <i style="font-size: 25px; color:blue;padding: 5px 10px;" class="fa-solid fa-paper-plane"></i>
+                  </div>
+               </div>
+            </div>
+            <div id="giohang">
+               <i class="fa-solid fa-cart-shopping" onclick="addToCart('Nike Air Max 97', 3200000)"></i>
+               <div class="overlay" id="overlay" onclick="toggleCart()"></div>
+               <div class="cart-popup" id="cart">
+                  <div class="cart-header">
+                     Giỏ hàng
+                  </div>
+                  <div class="cart-items" id="cart-items">
+                     <!-- Items will be rendered here -->
+                  </div>
+                  <div class="cart-footer">
+                     Tổng cộng: <span id="total-price">0₫</span>
+                     <button class="checkout-btn">Thanh toán</button>
+                  </div>
+</div>
+
+            </div>
+            <div id="thongbao">
+               <a href="thông báo .html"> <i style="font-size:20px;" class="fa-solid fa-bell"></i></a>
+             
+               <div id="tbaocon">
+                  <i class="fa-solid fa-envelope"></i>
+                  <h2>thông báo</h2>
+               </div>
+            </div>
+
+         <div id="đăng nhập">
+           
+            <a href="đăng nhập.html">ĐĂNG NHẬP </a>
+         </div>
+        
+         </div>
+      </div>
+   </header>
+   <div id="content">
+      <div id="video-overlay">
+         <video id="intro-video"  autoplay loop muted playsinline>
+             <source src="Orange_Creative_Sneaker_Video.mp4" type="video/mp4">
+             Trình duyệt của bạn không hỗ trợ video.
+         </video>
+         <button id="skip-btn">SKIP</button>
+     </div>
+
+      <div class="swiper" style="width: 100%; ">
+         <!-- Additional required wrapper -->
+         <div class="swiper-wrapper">
+           <!-- Slides -->
+           <div class="swiper-slide" data-swiper-autoplay="2000">
+            <img  style="width: 100%; margin-top: 10px; " src="AJ4MilitaryBlue_Primary_Desktop-2048x623.webp" alt="ảnh bìa">
+            <a href="loại.html"> 
+               <button id="buy"><h1>Buy & Sell now </h1></button>
+            </a>
+           </div>
+           <div class="swiper-slide">
+               <img  style="width: 100%; margin-top: 10px;" src="AJ4MilitaryBlue_Primary_Desktop-2048x623.webp" alt="ảnh bìa">
+                  <a href="loại.html"> 
+                     <button id="buy"><h1>Buy & Sell now </h1></button>
+                  </a>
+           </div>
+           <div class="swiper-slide">
+            <img  style="width: 100%; margin-top: 10px;" src="AJ4MilitaryBlue_Primary_Desktop-2048x623.webp" alt="ảnh bìa">
+                  <a href="loại.html"> 
+                     <button id="buy"><h1>Buy & Sell now </h1></button>
+                  </a>
+           </div>
+           
+         </div>
+         
+       
+         <!-- If we need navigation buttons -->
+         <div style="color: #333;font-size: 20px; border: 30px;" class="swiper-button-prev"></div>
+         <div style="color: #333;font-size: 20px;" class="swiper-button-next"></div>
+       
+       </div>
+         <div class="giữa">
+               <div class="nút">
+                  <a href="sk.html">SNEAKER</a>
+               </div>
+               <div class="nút">
+                  <a href="đá bóng.html"> ĐÁ BÓNG</a>
+               </div>
+               <div class="nút">
+                  <a href="áo.html">ÁO</a>
+               </div>
+               <div class="nút">
+                  <a href="quần.html">QUẦN</a>
+               </div>
+         </div>
+         <hr style="margin:  10px 100px;">
+         <div class="vocher"> 
+            <h2 class="pass" style="font-family: 'Roboto', sans-serif; margin-left: 10px;font-size: 27px;" data-aos="fade-up">Mua hàng ngay để nhận được mã giảm giá</h2>
+            <h2 class="pass" style="font-family: 'Roboto', sans-serif; margin-left: 10px;font-size: 27px;" data-aos="fade-up">Đơn đầu tiên sẽ nhận ngay mã giảm giá</h2>
+            <div class="swiper" style="width: 100%; margin-left: 30px;">
+               <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide" data-swiper-autoplay="2000" style="position: relative;">
+                     <img class="vocher-img"  src="FREE SHIP.png1.png" alt="">
+                     <button onclick="vocher()" style="position: absolute; top: 90px; left: 730px;"><h2>Lưu</h2></button>
+                  </div>
+                  <div class="swiper-slide" style="position: relative;">
+                     <img  class="vocher-img"  src="VOUCHER.png1.png" alt="">
+                     <button onclick="vocher()" style="position: absolute; top: 90px; left: 730px;"><h2>Lưu</h2></button>
+                  </div>
+                  <div style="color: #333;font-size: 20px; border: 30px;" class="swiper-button-prev"></div>
+                  <div style="color: #333;font-size: 20px;" class="swiper-button-next"></div>
+               </div>
+            </div>   
+         </div>
+         <hr style="margin:  10px 100px;" data-aos="fade-up">
+         <h2 class="pass" style="font-family: 'Roboto', sans-serif; margin-left: 100px;font-size: 25px;" data-aos="fade-up">Giày chính hãng mới nhất 2024</h2>
+         <h2 class="pass" style="font-family: 'Roboto', sans-serif;font-size: 25px;margin-left: 100px;" data-aos="fade-up"> Có các loại giày mới nhất như Nike Puma Jodan ...</h2>
+      
+         <div class="thanbai" data-aos="fade-up">
+            <div class="sanpham" data-aos="fade-up">
+               <img class="sp" src="main-square_6ad816c6-b359-43d5-a.jpg.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+               <a href="loại.html">Giày Nike Air Force 1 </a>       
+               <h4 style="color: brown;">+2.999.999đ-3.000.000đ  </h4>
+               <button class="button-dog" onclick="addToCart('Giày Nike Air Force 1', 1000000)">Mua ngay</button>
+            </div>
+            <div class="sanpham" data-aos="fade-up">
+               <img class="sp" src="pasted image 0 (1).png" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+               <a href="">Nike Air More Uptempo'</a>       
+               <h4 style="color: brown;">+2.999.999đ-3.000.000đ </h4>
+               <button class="button-dog" onclick="addToCart('Nike Air More Uptempo', 2900000)">Mua ngay</button>
+            </div>
+            <div class="sanpham" data-aos="fade-up">
+               <img class="sp" src="giay-sneaker-nike-air-force-1-low-nba-lv8-white-black-mau-trang-den-5f29253639afc-04082020160702.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+               <a href="">Giày Sneaker Nike Air Force 1 Low NBA LV8 White-Black Màu Trắng Đen</a>      
+               <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+               <button class="button-dog" onclick="addToCart('Giày Sneaker Nike Air Force 1 Low NBA LV8 White-Black Màu Trắng Đen', 2900000)">Mua ngay</button>
+
+            </div>
+            <div class="sanpham" data-aos="fade-up">
+               <img class="sp" src="giay-the-thao-nam-nike-dunk-low-fq6965-600-mau-do-phoi-trang-size-38-66daf97129c16-06092024194537.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+               <a href="">Nike Dunk Low By You </a>        
+               <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+
+
+                   <button class="button-dog" onclick="addToCart('Nike Dunk Low By You', 2900000)">Mua ngay</button>
+            </div>
+         </div>
+         
+         <div class="thanbai"data-aos="fade-up">
+            <div class="sanpham"data-aos="fade-up">
+            <img class="sp" src="giay-sneakers-nu-cat-sofa-af-ac273-brown-mau-nau-trang-6530c96b2894f-19102023131507.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Giày Sneaker Unsiex Cat & Sofa AF AC273 Brown Màu Nâu Trắng </a>       
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+
+                <button class="button-dog" onclick="addToCart('Giày Sneaker Unsiex Cat & Sofa AF AC273 Brown Màu Nâu Trắng', 2900000)">Mua ngay</button>
+         </div>
+         <div class="sanpham" data-aos="fade-up">
+            <img class="sp" src="giay-sneaker-unisex-cat-sofa-dunk-milk-tea-ac255-mau-trang-nau-6530d5cbbd93e-19102023140755.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Giày Sneaker Unisex Cat & Sofa Dunk Dark Milk Tea AC255 Màu Be Đen </a>
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                <button class="button-dog" onclick="addToCart('Giày Sneaker Unisex Cat & Sofa Dunk Dark Milk Tea AC255 Màu Be Đen', 2900000)">Mua ngay</button>
+         </div>
+         <div class="sanpham" data-aos="fade-up">
+            <img class="sp" src="giay-sneaker-unisex-cat-sofa-party-baby-ac280-mau-be-trang-6530d2c2d5e92-19102023135458.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">AIR JODAN 11 RETRO</a>       
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+            <button class="button-dog" onclick="addToCart('AIR JODAN 11 RETRO', 2900000)">Mua ngay</button>
+         </div>
+         <div class="sanpham" data-aos="fade-up">
+            <img class="sp" src="giay-sneaker-unisex-cat-sofa-pink-love-butterfly-ac278-mau-be-trang-6530d7a1dcf4e-19102023141545.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Giày Sneaker Unisex Cat & Sofa Pink Love Butterfly AC278 Màu Be Trắng</a>
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                <button class="button-dog" onclick="addToCart('Giày Sneaker Unisex Cat & Sofa Pink Love Butterfly AC278 Màu Be Trắng', 2900000)">Mua ngay</button>
+         </div>
+      </div>
+         
+      <div class="thanbai"data-aos="fade-up">
+            <div class="sanpham"data-aos="fade-up">
+               <img class="sp" src="giay-sneaker-unisex-cat-sofa-dunk-milk-tea-ac255-mau-trang-nau-6530d5cbbd93e-19102023140755.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+               <a href="">Giày Sneaker Unisex Cat & Sofa Dunk Milk Tea AC255 Màu Trắng Nâu</a>    
+               <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                   <button class="button-dog" onclick="addToCart('Giày Sneaker Unisex Cat & Sofa Dunk Milk Tea AC255 Màu Trắng Nâu', 2900000)">Mua ngay</button>
+            </div>
+            <div class="sanpham" data-aos="fade-up">
+               <img class="sp" src="giay-the-thao-nu-nike-air-force-1-07-multicolour-gradient-fd0801-100-phoi-mau-size-36-640064077f4d0-02032023155327.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+               <a href="">Giày Thể Thao Nữ Nike Air Force 1 07 Multicolour Gradient FD0801-100 </a>   
+               <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                   <button class="button-dog" onclick="addToCart('Giày Thể Thao Nữ Nike Air Force 1 07 Multicolour Gradient FD0801-100', 2900000)">Mua ngay</button>
+            </div>
+            <div class="sanpham" data-aos="fade-up">
+               <img class="sp" src="giay-the-thao-nike-air-force-1-shadow-ci0919-116-phoi-mau-size-35-5-65e53c47e4464-04032024101311.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+               <a href="">Giày Thể Thao Nike Air Force 1 Shadow CI0919-116 </a>  
+               <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                   <button class="button-dog" onclick="addToCart('Giày Thể Thao Nike Air Force 1 Shadow CI0919-116', 2900000)">Mua ngay</button>
+            </div>
+            <div class="sanpham" data-aos="fade-up">
+               <img class="sp" src="giay-sneaker-dior-patent-calf-leather-iridescent-nappa-leather-and-suede-phoi-mau-657c0104114be-15122023143220.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+               <a href="">Giày Sneaker Nam Dior Patent Calf Leather, Iridescent Nappa Leather And Suede 32308905630 </a> 
+               <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                   <button class="button-dog" onclick="addToCart('Giày Sneaker Nam Dior Patent Calf Leather, Iridescent Nappa Leather And Suede 32308905630 ', 2900000)">Mua ngay</button>
+            </div>
+         </div>
+      
+      <div class="đabong"data-aos="fade-up">
+        
+         <img style="width: 100%;" src="đá bóng 2.webp" alt="đá">
+         <hr>
+         <h2 class="pass" style=" font-family: 'Roboto', sans-serif;font-size: 25px;margin-left: 100px;">Giày đá bóng thương hiệu</h2>
+      </div>
+   <div class="thanbai"data-aos="fade-up">
+         <div class="sanpham"data-aos="fade-up">
+            <img class="sp" src="đáng bóng 4.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Giày đá bóng Nike Air Zoom Mercurial Vapor 16 Elite AG-PRO Mad Voltage - Volt/Black FQ8693-700 </a>   
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng Nike Air Zoom Mercurial Vapor 16 Elite AG-PRO Mad Voltage - Volt/Black FQ8693-700 ', 2900000)">Mua ngay</button>
+        </div>
+      <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="đá bóng 5.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng Nike Tiempo Legend 10 Academy MG Mad Voltage - Metallic Silver/Black/Volt DV4337-001</a>    
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng Nike Tiempo Legend 10 Academy MG Mad Voltage - Metallic Silver/Black/Volt DV4337-001', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="đá bóng6.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng Mizuno Morelia Neo IV Pro FG Charge - White/Radiant Red P1GA243460</a>   
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng Mizuno Morelia Neo IV Pro FG Charge - White/Radiant Red P1GA243460', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="đá bóng 7.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng Mizuno Morelia Neo IV Elite FG/AG Mugen - White/Laser Blue P1GA243225</a>   
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng Mizuno Morelia Neo IV Elite FG/AG Mugen - White/Laser Blue P1GA243225', 2900000)">Mua ngay</button>
+      </div>
+         
+   </div>
+      
+      <div class="thanbai"data-aos="fade-up">
+         <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="gdb1.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng adidas F50 League TF Advancement - Footwear White/Solar Red/Lucid Blue IF1343</a>   
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng adidas F50 League TF Advancement - Footwear White/Solar Red/Lucid Blue IF1343', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="gdb2.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng Nike Air Zoom Mercurial Superfly 9 Academy TF Mad Brilliance - Pink Foam/Black DJ5629-601</a>    
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng Nike Air Zoom Mercurial Superfly 9 Academy TF Mad Brilliance - Pink Foam/Black DJ5629-601', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="gdb3.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng Nike Air Zoom Mercurial Superfly 9 Academy TF Mad Ready - Yellow/Black DJ5629-700</a>   
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng Nike Air Zoom Mercurial Superfly 9 Academy TF Mad Ready - Yellow/Black DJ5629-700', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="gdb4.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng Nike Air Zoom Mercurial Vapor 16 Academy MG Mbappé Personal Edition - Laser Orange/Armory Navy FQ8377-800</a>   
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng Nike Air Zoom Mercurial Vapor 16 Academy MG Mbappé Personal Edition - Laser Orange/Armory Navy FQ8377-800', 2900000)">Mua ngay</button>
+      </div>
+      </div>
+      
+      <div class="thanbai"data-aos="fade-up">
+         <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="db5.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng NMS CAPITAN TF - Orange/Blue</a>   
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng NMS CAPITAN TF - Orange/Blue1', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="db6.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng NMS CAPITAN TF - White/Red</a>    
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng NMS CAPITAN TF - White/Red', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="db7.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng Nike Tiempo Legend 10 Pro FG Mad Ambition - Soar/White DV4333-400</a>   
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng Nike Tiempo Legend 10 Pro FG Mad Ambition - Soar/White DV4333-400', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham"data-aos="fade-up">
+         <img class="sp" src="db8.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Giày đá bóng Nike Air Zoom Mercurial Vapor 16 Academy MG Mad Ambition - Glacier Blue/Blue Orbit FQ8374-400</a>   
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Giày đá bóng Nike Air Zoom Mercurial Vapor 16 Academy MG Mad Ambition - Glacier Blue/Blue Orbit FQ8374-400', 2900000)">Mua ngay</button>
+      </div>
+      </div>
+      
+      <div class="ÁO" data-aos="fade-up">
+         <img style="width: 100%;" src="Lovepik_com-361364466-background-of-a-clothing-rack-get-a-high-quality-stock-image.jpg" alt="">
+            <hr style="margin: 10px 100px; "data-aos="fade-up">
+            <h2 class="pass" style="margin-left: 100px; font-size: 1.5em;font-family: 'Roboto', sans-serif;font-size: 25px;">Giày chính hãng mới nhất 2024</h2>
+            <h2 class="pass" style="margin-left: 100px;font-family: 'Roboto', sans-serif;font-size: 25px;"data-aos="fade-up"> Có các loại áo cao cấp .</h2>
+         <div class="thanbai"data-aos="fade-up">
+            <div class="sanpham"data-aos="fade-up">
+            <img class="sp" src="ao-thun-nam-nike-jumpman-crew-t-shirt-cj0922-100-mau-trang-6733046b00de3-12112024143155.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Áo Thun Nam Nike Jumpman Crew T-Shirt CJ0922-100 Màu Trắng</a>      
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                <button class="button-dog" onclick="addToCart('Áo Thun Nam Nike Jumpman Crew T-Shirt CJ0922-100 Màu Trắng', 2900000)">Mua ngay</button>
+         </div>
+         <div class="sanpham" data-aos="fade-up">
+            <img class="sp" src="ao-thun-nam-adidas-fluid-sport-badge-of-sport-graphic-tee-t-shirt-he4808-mau-trang-size-2xl-66b6c0eaeb2a2-10082024082250.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Áo Thun Nam Adidas Fluid Sport Badge Of Sport Graphic Tee T-Shirt HE4808 </a>       
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                <button class="button-dog" onclick="addToCart('Áo Thun Nam Adidas Fluid Sport Badge Of Sport Graphic Tee T-Shirt HE4808', 2900000)">Mua ngay</button>
+         </div>
+         <div class="sanpham" data-aos="fade-up">
+            <img class="sp" src="image-1681112127480.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Áo thời trang nike jordan air wordmark</a>      
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                <button class="button-dog" onclick="addToCart('Áo thời trang nike jordan air wordmark', 2900000)">Mua ngay</button>
+         </div>
+         <div class="sanpham" data-aos="fade-up" >
+            <img class="sp" src="bv5905-010_5357958d6a884f2587ad778d471d36eb.png" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Áo Nike Air Jordan Jumpman Classic Shirt Black BV5905-010 </a>    
+            <h4 style="color: brown;" data-aos="fade-up">+2.999.999đ-3.000.000đ</h4>
+                <button class="button-dog" onclick="addToCart('Áo Nike Air Jordan Jumpman Classic Shirt Black BV5905-010', 2900000)">Mua ngay</button>
+         </div>
+      </div>
+      <div class="thanbai" data-aos="fade-up">
+         <div class="sanpham" data-aos="fade-up">
+         <img class="sp" src="a1.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Áo Thun Nam Vivienne Westwood Black With Logo Printed 3G01001P J001M Màu Đen Size XS</a>      
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Áo Thun Nam Vivienne Westwood Black With Logo Printed 3G01001P J001M Màu Đen Size XS', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham" data-aos="fade-up">
+         <img class="sp" src="a2.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Áo Thun Nam Dolce & Gabbana D&G In White With Logo Printed T-Shirt L4JTEY G7M4H W0800 Màu Trắng Size 14Y</a>       
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+             <button class="button-dog" onclick="addToCart('Áo Thun Nam Dolce & Gabbana D&G In White With Logo Printed T-Shirt L4JTEY G7M4H W0800 Màu Trắng Size 14Y1', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham" data-aos="fade-up">
+         <img class="sp" src="a3.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Áo Nỉ Sweater Nam Dsquared2 White Ceresio 9 Cool S71GU0448 S25042 Màu Trắng</a>      
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+         <button class="button-dog" onclick="addToCart('Áo Nỉ Sweater Nam Dsquared2 White Ceresio 9 Cool S71GU0448 S25042 Màu Trắng', 2900000)">Mua ngay</button>
+      </div>
+      <div class="sanpham" data-aos="fade-up">
+         <img class="sp" src="a4.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+         <a href="">Áo Nỉ Sweater MLB Monogram Logo NY 3AMTM0224-50BKS Màu Đen </a>    
+         <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+         <button class="button-dog" onclick="addToCart('Áo Nỉ Sweater MLB Monogram Logo NY 3AMTM0224-50BKS Màu Đen', 2900000)">Mua ngay</button>
+      </div>
+      </div>
+            <img style="width: 100%;" src="banner_2e04aaecff694c44a583ea75d__1__31597a4e51124c90a598c0197f1d3320.webp" alt="">
+            <hr style="margin-left: 100px;">
+            <h2 class="pass" style="margin-left: 100px; font-family: 'Roboto', sans-serif;font-size: 25px;"> CÁC LOẠI QUẦN</h2>
+         <div class="thanbai" data-aos="fade-up">
+            <div class="sanpham" data-aos="fade-up">
+            <img class="sp" src="q1.jpg" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Quần Jean Nam Calvin Klein CK Skinny Fit Forever Black Jeans SP40590772 40JP780  </a>       
+            <h4 style="color: brown;">+69.999đ</h4>
+                <button class="button-dog" onclick="addToCart('Quần Jean Nam Calvin Klein CK Skinny Fit Forever Black Jeans SP40590772 40JP780  ', 2900000)">Mua ngay</button>
+         </div>
+         <div class="sanpham" data-aos="fade-up">
+            <img class="sp" src="quan-dai-the-thao-nam-BV4841-010-1.png" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Quần Dài Thể Thao Nam Nike AS M NK DF RUN STRIPE</a>    
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+            <button class="button-dog" onclick="addToCart('Quần Dài Thể Thao Nam Nike AS M NK DF RUN STRIPE', 2900000)">Mua ngay</button>
+         </div>
+         <div class="sanpham" data-aos="fade-up">
+            <img class="sp" src="quan-dai-tre-em-nike-jordan-pant-85a124-023.png" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Quần dài trẻ em Jordan Pant 85A124-023 1.890.000₫</a> 
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                <button class="button-dog" onclick="addToCart('Quần dài trẻ em Jordan Pant 85A124-023', 2900000)">Mua ngay</button>
+         </div>
+         <div class="sanpham" data-aos="fade-up">
+            <img class="sp" src="d09c43b1b3495637f8ebe69e0f36ab56_5aef1fc0702446fd856e7c9dff5e2fa7.jpg" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+            <a href="">Quần Nike SB Men’s Skate Shorts Black BQ9427-010</a>      
+            <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+                <button class="button-dog" onclick="addToCart('Quần Nike SB Men’s Skate Shorts Black BQ9427-010', 2900000)">Mua ngay</button>
+         </div>
+      </div>
+      </div>
+   </div>
+   <footer id="footer">
+      <div id="id5" data-aos="fade-up">
+         <div class="kết" data-aos="fade-up">
+            <div id="DM" data-aos="fade-up">
+               <img id="log" src="istockphoto-1347979185-2048x2048.jpg" alt="logon">
+               <h2> DANH MỤC</h2>
+               <a href="sk.html">SNEAKER</a>
+               <a href="đá bóng.html">Giày ĐÁ BÓNG </a>
+               <a href="áo.html">ÁO</a>
+               <a href="quần.html">QUẦN</a>
+            </div>
+            <div id="HT">
+               <h2> Hỗ TRỢ KHÁCH HÀNG</h2>
+               <a href=""> Chính sách bảo vệ khách hàng</a>
+               <a  href=""> <i class="fa-solid fa-landmark"></i>Chính sách đổi trả/hoàn tiền</a>
+               <a href=""> Chính sách giảo hàng  </a>
+               <a href=""> Chính sách bảo hành/bảo mật</a>
+               <a href="">Kiểm tra đơn hàng</a>
+            </div>
+            <div id=" HL">
+               <H2> LIÊN HỆ SHOP</H2>
+               <i class="fa-solid fa-phone"></i>hotline:0857602508</p>
+               <a href="https://www.facebook.com/profile.php?id=100065148565790"> <i class="fa-brands fa-facebook"></i>LÊ KHÁNH DUY</a>
+               <div id="cuoi">
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-solid fa-envelope"></i>
+               </div>
+            </div>
+            
+         </div>
+            
+      </div>
+   </footer>
+  
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+   const swiper = new Swiper('.swiper', {
+   autoplay:{
+      delay: 3000
+   },
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+<script>
+   function duyy(){
+      console.log('1')
+     document.querySelector("#header").classList.toggle("onshow")
+   }
+   
+</script>
+<script>
+   function message(){
+      console.log('1')
+     document.querySelector("#messcon").classList.toggle("onshow")
+   }
+   
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init();
+ </script>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+ <script>
+function vocher(){
+   Toastify({
+ text: "Đã lưu vocher thành công",
+ duration: 3000,
+ destination: "https://github.com/apvarun/toastify-js",
+ newWindow: true,
+ close: true,
+ gravity: "top", // `top` or `bottom`
+ position: "left", // `left`, `center` or `right`
+ stopOnFocus: true, // Prevents dismissing of toast on hover
+ style: {
+   background: "linear-gradient(to right, #00b09b, #96c93d)",
+ },
+ onClick: function (){} // Callback after click
+}).showToast();
+   }
+  </script>
+   <script>
+      function login(){
+         Toastify({
+       text: "đang được cập nhật",
+       duration: 3000,
+       destination: "https://github.com/apvarun/toastify-js",
+       newWindow: true,
+       close: true,
+       gravity: "top", // `top` or `bottom`
+       position: "left", // `left`, `center` or `right`
+       stopOnFocus: true, // Prevents dismissing of toast on hover
+       style: {
+         background: "linear-gradient(to right, #00b09b, #96c93d)",
+       },
+       onClick: function (){} // Callback after click
+      }).showToast();
+         }
+        </script>
+
+<script>// vd lúc mới hiện web
+   const video = document.getElementById('intro-video');
+   const overlay = document.getElementById('video-overlay');
+   const mainContent = document.getElementById('main-content');
+   const skipBtn = document.getElementById('skip-btn');
+
+   // Hàm thực hiện hiệu ứng mờ dần
+   function hideOverlay() {
+       overlay.style.opacity = '0';  // Mờ dần
+       setTimeout(() => {
+           overlay.style.display = 'none';  // Ẩn hẳn sau khi mờ
+           mainContent.style.display = 'block';
+       }, 1000);  // 1 giây (khớp với transition)
+   }
+
+   // Khi video kết thúc
+   video.onended = function() {
+       hideOverlay();
+   };
+
+   // Khi bấm nút "Bỏ qua"
+   skipBtn.onclick = function() {
+       video.pause();  // Tạm dừng video
+       hideOverlay();
+   };
+</script>
+<script>
+   let cart = [];//cart là một
+
+   function addToCart(name, price) {//name la tên price là giá
+       const existingItem = cart.find(item => item.name === name);//Tìm trong giỏ hàng xem sản phẩm đã tồn tại ( find)
+       if (existingItem) {
+           existingItem.quantity++;
+       } else {
+           cart.push({ name, price, quantity: 1});//Nếu sản phẩm đã có : Tăquantity) tôi
+       }
+       renderCart();
+       toggleCart();
+   }
+
+   function renderCart() {
+       const cartItems = document.getElementById('cart-items');//khai báo biến
+       const totalPrice = document.getElementById('total-price');
+       cartItems.innerHTML = '';
+       let total = 0;
+
+       cart.forEach((item, index) => {//Duyệt qua mảngcart để forEach()chào
+           total += item.price * item.quantity;
+           cartItems.innerHTML += `
+               <div class="cart-item">
+                   <img src="đáng bóng 4.webp" alt="${item.name}">
+                   <div class="item-info">
+                       <div class="item-name">${item.name}</div>
+                       <div class="item-price">${item.price.toLocaleString()}₫</div>
+                       <div class="item-quantity">
+                           <button class="quantity-btn" onclick="changeQuantity(${index}, -1)">-</button>
+                           <input type="text" class="quantity-input" value="${item.quantity}" readonly>
+                           <button class="quantity-btn" onclick="changeQuantity(${index}, 1)">+</button>
+                       </div>
+                   </div>
+                   <button class="remove-btn" onclick="removeItem(${index})">Xóa</button>
+               </div>`;
+       });
+
+       totalPrice.innerText = `${total.toLocaleString()}₫`;//tổng giá trị ,Hiển thị tổng giá trị ở phần tử id="total-price".
+   }
+
+   function toggleCart() {
+       const cartPopup = document.getElementById('cart');
+       const overlay = document.getElementById('overlay');
+       cartPopup.classList.toggle('show');
+       overlay.style.display = cartPopup.classList.contains('show') ? 'block' : 'none';//hiển thị hoặc ẩn
+   }
+
+   function changeQuantity(index, delta) {//Nút tăng/giảm số lượng sản phẩm
+       if (cart[index].quantity + delta > 0) {
+           cart[index].quantity += delta;
+       } else {
+           cart.splice(index, 1);//Nếu số lượng mới bằng 0, hãy xóa sản phẩm khỏ splice).
+       }
+       renderCart();
+   }
+
+   function removeItem(index) {//Nút tăng/giảm số lượng sản phẩm
+       cart.splice(index, 1);//xoá 1
+       renderCart();
+   }
+</script>
+  
+</body>
+</html>

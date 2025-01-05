@@ -1,0 +1,598 @@
+body{
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.pass{
+    font-weight: 800;
+}
+header{
+    display: flex;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #f4f4f4;
+    opacity: 0.9;
+    z-index: 999;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 10px 10px whitesmoke;
+}
+.menu{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+header a:hover{
+    color: blue;
+}
+a :hover{
+    color: blue;
+}
+.menu1{
+    display: flex;
+    padding: 20px 15px;
+}
+.menu1 a{
+    padding: 0px;
+    color: black;
+}
+#gioithieu{
+    padding: 0px 15px;
+    position: relative;
+}
+.menu2{
+    display: flex;
+    padding:  20px 5px;
+    
+}
+#sanpham{
+    position: relative;
+
+}
+#sanpham:hover #spcon{
+    display: block;
+}
+#spcon{
+    position: absolute;
+     height: 300px;
+     width: 200px;
+     background-color: whitesmoke;
+     opacity: 1;
+     text-align: center;
+     top: 30px;
+     left: 0px;
+     border-radius: 20px;
+     padding: 10px;
+     flex-direction: column;
+     display: none;
+     
+}
+#spcon a{
+    display: block;
+    color: black;
+    padding: 10px 0px;
+}
+
+.menu2 a{
+    padding: 0px 10px;
+    color: black;
+}
+#logon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+header a{
+    position: relative;
+}
+#thongbao{
+    position: relative;
+    
+}
+#tbaocon{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    
+    right: -85px;
+    border-radius: 20px;
+    display: none;
+
+}
+#thongbao :hover {
+    color: blue;
+}
+#thongbao:hover #tbaocon {
+    display: block;
+    transition: all ease .9s;
+}
+.him{
+    display: none;
+}
+#message{
+    position: relative;
+}
+#messcon.onshow{
+    display: block;
+}
+#messcon{
+    right: -120px;
+    top: 210px;
+    position: absolute;
+    background-color: black;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    display: none;
+}
+#mes{
+    border-radius: 10px;
+    display: flex;
+   background-color: black;
+   box-shadow: 0px 0px 15px #333;
+}
+#mess-tin{
+    margin-top: 380px;
+    display: flex;
+    margin-left: 5px;
+}
+#header a:hover::after {
+    transform: scale(1, 1);
+}
+#header a::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    left: 0;
+    transform: scale(0, 0);
+    transition: all ease .8s;
+    transform-origin: right;
+}
+.giữa{
+    display: flex;
+    justify-content: center;
+}
+.swiper {
+    width: 100%;
+  margin-top: 0px;
+  }
+
+.nút:hover::after{
+    transform: translateX(0);
+ 
+}
+.nút::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    transform: translateX(-100%);
+    transition: all .5s;
+    z-index: -1;
+   transform-origin: left;
+   border-radius: 10px;
+   overflow: hidden;
+}
+.nút{
+    background-color: black;
+    padding: 30px 60px;
+    margin: 15px 5px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; 
+    box-shadow: 30px 20px 30px -6px #333;
+}
+.nút:hover{
+    transform: translateY(3px);
+    box-shadow: none;
+    transition: all ease 0.5s;
+}
+.nút a{
+    color: azure;
+    
+}
+.vocher-img{
+    width: 900px; 
+    height: 260px;
+}
+
+#buy{
+    padding: 0px 40px;
+    position: absolute;
+     top: 270px;
+     left: 266px;
+     border-radius: 50px;
+     border: none;
+     background: white;
+     box-shadow: 0 0 25px  white;
+     box-shadow: 0 20px 30px -6px #333;
+
+}
+#buy:hover{
+    box-shadow: 0 0 5px   white,
+              0 0 25px   white,
+              0 0 50px   white,
+              0 0 100px   white,
+              0 0 250px   white;
+}
+.vocher{
+    position: relative;
+}
+ .vocher button{
+    padding: 0px 45px;
+    background-color: black;
+    border-radius: 10px;
+    color: #F9F400;
+    font-size: 16px;
+    box-shadow: 0 20px 30px -6px #333;
+
+ }
+ .vocher button:hover{
+    transform: translateY(3px);
+    box-shadow: none;
+    transition: all ease 0.5s;
+ }
+ .you1:hover::after{
+    transform: scale(1.1)
+ }
+ .you1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 9px;
+    background-color: #eb1010;
+    border-radius: 10px;
+    transform: scale(0.2);
+    transition: all ease .9s;
+    transform-origin: left;
+    
+    
+ }
+ .you1{
+    position: absolute;
+    width: 350px;
+    top:466px;
+    left: 307px;
+    height: 50px;
+    
+ }
+.you2{
+    position: absolute;
+    width: 350px;
+    top:760px;
+    left: 307px;
+    height: 50px;
+}
+.you2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 9px;
+    background-color: #eb1010;
+    border-radius: 10px;
+    transform: scale(0.2);
+    transition: all ease .9s;
+    transform-origin: left;
+ }
+ .you2:hover::after{
+    transform: scale(1.1);
+
+ }
+
+.thanbai{
+    margin: 0px 100px;
+    display: flex;
+}
+.sanpham{
+    width: 25%;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+}
+.sanpham a{
+    color: black;
+}
+.sp{
+    width: 100%;
+    
+    height: 250px;
+
+}
+.sanpham:hover{
+    transform: scale(1.05) !important;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.LH{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0px;
+    top: 600px;
+    font-size: 40px;
+    color: blue;
+    z-index: 99;
+    
+}
+.tk{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0px;
+    top: 530px;
+    font-size: 40px;
+    color: rgb(10, 10, 10);
+    z-index: 99;
+    
+    
+}
+.vocher{
+    margin-left: 100px;
+}
+hr{
+    border: color ( black);
+    margin: 10px;
+    
+}
+#id5{
+    padding: 20px 0px;
+    
+    background-color: black;
+    color: #f4f4f4;
+    border-radius: 10px;
+    position: relative;
+}
+.kết{
+   
+    justify-content: space-around;
+    display: flex;
+   
+   
+}
+#DM {
+    flex-direction: column;
+    /* cha của các cái danh mục con là dm nên flex: column phải là #dm nhé e */
+    display: flex;
+    gap: 10px;
+    color: #f4f4f4;
+}
+#DM a{
+    color: #f4f4f4;
+}
+#HT{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+#HT a{
+    color: #f4f4f4;
+}
+#HL a{
+    color: white;
+}
+#cuoi{
+    margin-left: -20px;
+    margin-top: 20px;
+    justify-content: space-around;
+ 
+}
+#cuoi i{
+   font-size: 16px;
+   margin: 0px 20px;
+}
+#cuoi i:last-child {
+    margin-right: 60px;
+}
+#log{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+}
+
+#gach{
+    display: none;
+}
+
+.swiper-button-prev:hover{
+ transform: translateX(-5px);
+ transition: all ease 0.5s;
+}
+.swiper-button-next:hover{
+    transform: translateX(5px);
+    transition: all ease 0.5s;
+   
+}
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+            transition: opacity 1s ease;  /* Hiệu ứng mờ dần trong 1 giây */
+}
+video {
+    width: 100%;
+    height: auto;
+}
+#skip-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10000;
+}
+.add-to-cart {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.add-to-cart:hover {
+    background: #0056b3;
+}
+/* Popup Giỏ hàng */
+.cart-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    z-index: 1000;
+}
+.cart-popup.show {
+    transform: translateX(0);
+}
+.cart-header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+.cart-items {
+    padding: 20px;
+    max-height: 65%;
+    overflow-y: auto;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.cart-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.item-info {
+    flex: 1;
+    margin-left: 15px;
+}
+.item-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+.item-price {
+    color: #555;
+    margin-top: 5px;
+}
+.item-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.quantity-btn {
+    background: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+}
+.remove-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.cart-footer {
+    padding: 20px;
+    text-align: right;
+    border-top: 1px solid #ddd;
+}
+.cart-footer span {
+    font-size: 18px;
+    font-weight: 600;
+}
+.checkout-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.sanpham:hover .button-dog {
+    transform: scale(1,1) !important;
+     transition: all ease 0.6s;
+   
+ }
+ .button-dog:hover{
+     box-shadow: 0 0 5px   white,
+       0 0 25px   white,
+       0 0 50px   white,
+       0 0 100px   white,
+       0 0 250px   white;
+ }
+ .button-dog{
+     font-size:15px;
+     color:whitesmoke;
+     position: absolute;
+     top: 210px;
+     right: 20px;
+     transform: scale(0,0);
+     font-weight: 900;
+     width: 100px;
+     height: 30px;
+     align-items: center;
+     background-color: #333;
+     border: 0px;
+     border-radius: 5px;
+     box-shadow:  0px 0px 25px #333;
+ }
+

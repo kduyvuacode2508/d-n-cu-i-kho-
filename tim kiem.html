@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         .form-side {
+            background-image: url(cach-to-mau-sap-dep-don-gian-4.png);
+            background-position: center;
+            height: 250px;
+            box-shadow: 0px 0px 50px black;
+            position: relative;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+
+         }
+       .form-side  form input{
+            border: 0px;
+             border-bottom:  4px solid #333;
+             font-size: 12px;
+             background: transparent;
+             outline: 0;
+             width: 600px;
+             justify-content: center;
+             color: black;
+             font-size: 50px;
+             margin-top: 80px;
+         }
+         .form-my {
+            justify-content: center;        
+            margin-left: 400px;
+         }
+         .thanbai{
+            margin: 0px 100px;
+            display: flex;
+            margin-top: 300px;
+        }
+        .sanpham{
+            width: 25%;
+            text-align: center;
+            position: relative;
+            margin: 10px;
+        }
+        .sanpham a{
+            color: black;
+        }
+        .sp{
+            width: 100%;
+            position: relative;
+            height: 250px;
+
+        }
+        .sanpham:hover{
+            transform: scale(1.1);
+            transition: all ease 0.5s;
+        }
+        .sanpham:hover .button-dog {
+           transform: scale(1,1) !important;
+            transition: all ease 0.9s;
+          
+        }
+        .button-dog:hover{
+            box-shadow: 0 0 5px   white,
+              0 0 25px   white,
+              0 0 50px   white,
+              0 0 100px   white,
+              0 0 250px   white;
+        }
+        .button-dog{
+            font-size:15px;
+            color:whitesmoke;
+            position: absolute;
+            top: 210px;
+            right: 20px;
+            transform: scale(0,0);
+            font-weight: 900;
+            width: 100px;
+            height: 30px;
+            align-items: center;
+            background-color: #333;
+            border: 0px;
+            border-radius: 5px;
+            box-shadow:  0px 0px 25px #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-side">
+       <a href="trang chủ.html"> <i style="position: absolute;font-size: 14px;color: white;background-color: black;border-radius: 50%;padding: 5px 8px;right: 20px;top: 20px" class="fa-solid fa-x"></i></a>
+        <div class="form-my">
+            <form style="" action="" method="post">
+               <h2 style="position: absolute;left: 460px;">hello pro</h2>
+                <i style="font-size: 30px;margin: 0px 10px;color: black;" onClick="duyy()"  class="fa-solid fa-magnifying-glass"></i> 
+                <input type="search" placeholder="search">
+            </form>
+        </div>
+    </div>
+
+    <div class="thanbai"data-aos="fade-up">
+        <div class="sanpham"data-aos="fade-up">
+        <img class="sp" src="giay-sneakers-nu-cat-sofa-af-ac273-brown-mau-nau-trang-6530c96b2894f-19102023131507.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+        <a onclick="" href="">Giày Sneaker Unsiex Cat & Sofa AF AC273 Brown Màu Nâu Trắng </a>       
+        <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+       <button class="button-dog">Mua ngay</button>
+     </div>
+     <div class="sanpham" data-aos="fade-up">
+        <img class="sp" src="giay-sneaker-unisex-cat-sofa-dunk-milk-tea-ac255-mau-trang-nau-6530d5cbbd93e-19102023140755.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+        <a href="">Giày Sneaker Unisex Cat & Sofa Dunk Dark Milk Tea AC255 Màu Be Đen </a>
+        <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+        <button class="button-dog"> duyy</button>
+     </div>
+     <div class="sanpham" data-aos="fade-up">
+        <img class="sp" src="giay-sneaker-unisex-cat-sofa-party-baby-ac280-mau-be-trang-6530d2c2d5e92-19102023135458.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+        <a href="">AIR JODAN 11 RETRO</a>       
+        <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+     </div>
+     <div class="sanpham" data-aos="fade-up">
+        <img class="sp" src="giay-sneaker-unisex-cat-sofa-pink-love-butterfly-ac278-mau-be-trang-6530d7a1dcf4e-19102023141545.webp" alt="Giày Nike Air Force 1 ’07 LX ‘Worldwide Pack – Black’ CZ5927-001">
+        <a href="">Giày Sneaker Unisex Cat & Sofa Pink Love Butterfly AC278 Màu Be Trắng</a>
+        <h4 style="color: brown;">+2.999.999đ-3.000.000đ</h4>
+     </div>
+  </div>
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
+   <script>
+    function duyy(){
+    Toastify({
+  text: "không tìm thấy món đồ",
+  duration: 3000,
+  destination: "https://github.com/apvarun/toastify-js",
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "left", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+  onClick: function (){} // Callback after click
+}).showToast();
+    }
+   </script>
+   
+</body>
+</html>

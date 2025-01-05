@@ -1,0 +1,245 @@
+
+header{
+    background-color: #f4f4f4;
+    display: flex;
+    opacity: 0.;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+.menu{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+
+}
+.menu1{
+    display: flex;
+    padding: 20px 15px;
+}
+.menu1 a{
+    padding: 0px;
+    color: black;
+}
+#trangchu{
+    padding: 0px 15px;
+}
+.menu2{
+    display: flex;
+    padding:  20px 15px;
+    
+}
+.menu2 a{
+    padding: 10px;
+    color: black;
+}
+#logon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+#thongbao{
+    position: relative;
+    
+}
+#tbaocon{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: -85px;
+    border-radius: 20px;
+    display: none;
+}
+
+#thongbao :hover {
+    color: aqua;
+}
+#thongbao:hover #tbaocon {
+    display: block;
+}
+.box{
+    width: 100%;
+    margin-top: 100px;
+    
+}
+.thanbai{
+    margin: 0px 100px;
+    display: flex;
+}
+.sanpham{
+    width: 25%;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+}
+.sanpham a{
+    color: black;
+}
+.sp{
+    width: 100%;
+    
+    height: 250px;
+}
+.sanpham:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5;
+}
+#sanpham:hover #spcon{
+    display: block;
+}
+#sanpham{
+    position: relative;
+
+}
+#sanpham:hover #spcon{
+    display: block;
+}
+#spcon{
+    position: absolute;
+     height: 300px;
+     width: 200px;
+     background-color: whitesmoke;
+     opacity: 1;
+     text-align: center;
+     top: 30px;
+     left: 0px;
+     border-radius: 20px;
+     padding: 10px;
+     flex-direction: column;
+     display: none;
+     
+}
+#spcon a{
+    display: block;
+    color: black;
+    padding: 10px 0px;
+}
+
+.him{
+    display: none;
+}
+#messcon{
+    right: -120px;
+    top: 210px;
+    position: absolute;
+    background-color: black;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    display: none;
+}
+#mes{
+    border-radius: 10px;
+    display: flex;
+   background-color: black;
+   box-shadow: 0px 0px 15px #333;
+}
+#mess-tin{
+    margin-top: 380px;
+    display: flex;
+    margin-left: 5px;
+}
+table{
+    width: 80%;
+    text-align: center;
+    
+    
+
+    
+  
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+.id{
+    width: 8%;
+}
+#id5{
+    padding: 20px 0px;
+    
+    background-color: black;
+    color: #f4f4f4;
+    border-radius: 10px;
+    position: relative;
+}
+.kết{
+   
+    justify-content: space-around;
+    display: flex;
+   
+   
+}
+#DM {
+    flex-direction: column;
+    /* cha của các cái danh mục con là dm nên flex: column phải là #dm nhé e */
+    display: flex;
+    gap: 10px;
+    color: #f4f4f4;
+}
+#DM a{
+    color: #f4f4f4;
+}
+#HT{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+#HT a{
+    color: #f4f4f4;
+}
+#HL a{
+    color: white;
+}
+#cuoi{
+    margin-left: -20px;
+    margin-top: 20px;
+    justify-content: space-around;
+ 
+}
+#cuoi i{
+   font-size: 16px;
+   margin: 0px 20px;
+}
+#cuoi i:last-child {
+    margin-right: 60px;
+}
+#log{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.LH{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0px;
+    top: 600px;
+    font-size: 40px;
+    color: blue;
+    z-index: 1;
+    
+}
+.tk{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0px;
+    top: 530px;
+    font-size: 40px;
+    color: rgb(10, 10, 10);
+    z-index: 1;
+    
+    
+}
+    

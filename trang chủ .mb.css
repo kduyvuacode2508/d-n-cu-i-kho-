@@ -11,7 +11,7 @@
         position: relative;
         color: whitesmoke;
         display: none;
-        
+        align-items: center;
         margin-top:80px;
        position: fixed;
     }
@@ -40,7 +40,7 @@
     .menu2{
         flex-direction: column;
         position: absolute;
-        bottom: 280px;
+        bottom: 100px;
     }
     .menu2 i{
         padding: 10px 10px;
